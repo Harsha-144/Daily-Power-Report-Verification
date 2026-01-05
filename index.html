@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Verification Tool</title>
+    <meta name="description" content="Verify plant consumption reports for WHRS, CPP, and EB calculations">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome Rangaiah gari Raveendra Reddy</h1>
+            <p class="datetime-display" id="dateTimeDisplay"></p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <label for="reportText">
+                    <span class="label-text">Report Text</span>
+                    <span class="label-hint">Paste your complete report here</span>
+                </label>
+                <textarea id="reportText"
+                    placeholder="Paste your report text here...&#10;&#10;Example:&#10;WHRS Generation - 1,234&#10;WHRS Aux - 123&#10;WHRS Net - 1,111&#10;WHRS (45.5%)&#10;..."></textarea>
+
+                <button id="verifyBtn" class="verify-btn">
+                    <span class="btn-icon">🔍</span>
+                    Verify Report
+                </button>
+            </div>
+
+            <div id="resultSection" class="result-section hidden">
+                <div id="resultHeader" class="result-header">
+                    <span id="resultIcon" class="result-icon"></span>
+                    <h2 id="resultTitle"></h2>
+                </div>
+                <div id="resultDetails" class="result-details"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Rangaiah gari Harshavardhan Reddy@2026</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
